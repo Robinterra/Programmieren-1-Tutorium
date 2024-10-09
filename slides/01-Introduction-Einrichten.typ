@@ -82,12 +82,12 @@
   #set text(size: 1.2em)
   #align(horizon,
   [
-    - Matrix Channel: 
+    - Matrix Channel: https://matrix.to/#/!PoSJRaQHQOGuOyBtJs:matrix.tu-bs.de?via=matrix.tu-bs.de
     - In der Studip Veranstaltung das Forum
     - Donnerstags 15:00 Uhr hier direkt bei der Veranstaltung
     - In Persona: IZ 146
     - Oder per Mail:
-      - robin.dandrea\@tu-braunschweig.de
+      - dandrea\@ibr.cs.tu-bs.de
   ])
 ]
 == IBR Account
