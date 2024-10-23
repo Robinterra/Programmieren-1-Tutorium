@@ -15,7 +15,6 @@
 
 #outline()
 
-
 = Organisatorisches
 == Was sind die Ziele des Tutoriums?
 #align(horizon,
@@ -88,6 +87,7 @@
     - In Persona: IZ 146
     - Oder per Mail:
       - dandrea\@ibr.cs.tu-bs.de
+      - l.stange\@tu-bs.de
   ])
 ]
 == IBR Account
