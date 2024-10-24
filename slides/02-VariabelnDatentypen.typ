@@ -52,13 +52,14 @@ public class Program {
   }
 }
 ```
-== Ganz viele Fragezeichen
+
+#pagebreak()
+
 //liste einmal die Keywords auf, static public, class, void und sage das diese für den moment zur seite gelegt werden und zu einem gegeben Zeitpunkt erklärt werden
 #[
-  #set text(size: 1.2em)
   #align(horizon,
   [
-
+    - Ganz viele Fragezeichen:
     ```java
     public  static  private  protected  class
     ```
@@ -158,7 +159,7 @@ System.out.println(result); // result == 4
 // Z.B. int v1x = 1, v1y = 2, v2x = 3, v2y = 4; und dann int sumx = v1x + v2x; int sumy = v1y + v2y;.
 // Lernziel: Umgang mit Variablen und einfachen Operationen.
 
-== Rechnen mit Vektoren
+== Rechnen mit Vektoren und Matrizen
 // schreibe ein kleines java program, das zwei vektoren addiert, subtrahiert und das skalarprodukt berechnet, erkläre was ein Skalarprodukt ist
 #[
   #align(horizon,
@@ -167,7 +168,24 @@ System.out.println(result); // result == 4
     $ mat(1;2;) + mat(3;4;) = mat(1 + 3;2 + 4;) = mat(4;6;) $
     $ mat(3;4;) - mat(1;2;) = mat(3 - 1;4 - 2;) = mat(2;2;) $
     - Das Skalarprodukt von 2 Vektoren berechnen, was die Summe der Produkte der Komponenten
-    $ mat(1;2;) * mat(3;4;) = 1*3 + 2*4 = 11 $
+    $ mat(1;2;) circle.filled.small mat(3;4;) = 1*3 + 2*4 = 11 $
+  ])
+]
+#pagebreak()
+#[
+  #align(horizon,
+  [
+    - Ideen zur Implementierung
+    ```java
+    int vektor1_x = 1, vektor1_y = 2; // Vektor 1 anlegen
+
+    int vektor2_x = 3, vektor2_y = 4; // Vektor 2 anlegen
+
+    int vektor3_x = vektor1_x + vektor2_x, // Summe der oberen Zeile
+    vektor3_y = vektor1_y + vektor2_y; // Summe der unteren Zeile
+
+    System.out.println("Summe: (" + vektor3_x + ", " + vektor3_y + ")");
+    ```
   ])
 ]
 
@@ -184,3 +202,41 @@ System.out.println(result); // result == 4
     - Unterstützung hier im Tutorium, im IZ146 oder Online
   ])
 ]
+
+
+== Was sind Arrays?
+// erkläre auf ein paar folien was arrays sind, wie darauf zugegriffen werden kann und mach auch beispiele in java für anfänger die sehr simple arrays zeigen
+#[
+  #set text(size: 1.2em)
+  #align(horizon,
+  [
+    - Arrays sind eine Sammlung von Variablen
+    - Auf ein Element wird über den Index zugegriffen
+    - Zum Beispiel:
+
+  ])
+]
+```java
+int[] zahlen = {1, 2, 3, 4, 5};
+System.out.println(zahlen[0]); // 1
+```
+#pagebreak()
+// erkläre nun das indexing von arrays und
+#[
+  #set text(size: 1.2em)
+  #align(horizon,
+  [
+    - Indexing beginnt bei 0
+    - Zugriff auf ein Element: array[index]
+    - Länge eines Arrays: array.length
+  ])
+]
+```java
+int[] vektor_1 = {1, 2};
+int[] vektor_2 = {3, 4};
+int[] vektor_3 = {vektor_1[0] + vektor_2[0], vektor_1[1] + vektor_2[1]};
+System.out.println(vektor_3[0]); // 4
+System.out.println(vektor_3[1]); // 6
+//System.out.println(vektor_3[3]); //Fehler, Zugriff auf ein nicht existierendes Element
+System.out.println(vektor_3.length); // 2
+```
