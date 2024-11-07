@@ -15,6 +15,8 @@
 
 #outline()
 
+//TODO: Klären ob Javainstallationsanleitung nötig ist oder einfach später starten in Zukunft
+
 = Organisatorisches
 == Wiederholung von letzter Woche
 #[
@@ -204,7 +206,7 @@ System.out.println(result); // result == 4
 ]
 
 
-== Was sind Arrays?
+== Was sind Arrays? (optional)
 // erkläre auf ein paar folien was arrays sind, wie darauf zugegriffen werden kann und mach auch beispiele in java für anfänger die sehr simple arrays zeigen
 #[
   #set text(size: 1.2em)
