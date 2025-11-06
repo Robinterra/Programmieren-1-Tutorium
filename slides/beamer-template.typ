@@ -216,7 +216,7 @@
   set outline(
     // target: heading.where(level: 1),
     indent: auto,
-    title: "Table of Contents2"
+    title: "Table of Contents"
   )
   show outline: set heading(level: 2)
   
