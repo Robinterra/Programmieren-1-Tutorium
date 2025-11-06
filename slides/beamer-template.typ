@@ -139,7 +139,7 @@
 
   // Title Slide
   [
-    #set page (
+    #set page(
       footer: none,
       header: none,
       margin: 0cm
@@ -215,8 +215,8 @@
   // Outline
   set outline(
     // target: heading.where(level: 1),
-    indent: true,
-    title: "Table of Contents"
+    indent: auto,
+    title: "Table of Contents2"
   )
   show outline: set heading(level: 2)
   
@@ -242,7 +242,7 @@
   show heading: set text(1.1em, fill: title-color)
 
   // Additional Styling (Term, Code)
-  set text (size: 1.2em)
+  set text(size: 1.2em)
   show terms.item: it => {
     set block(width: 100%, inset: 5pt)
     stack(
